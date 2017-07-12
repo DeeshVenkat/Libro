@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eathindhar.libro.regActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/name_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="125dp"
+        android:layout_above="@+id/email_reg"
+        android:layout_alignLeft="@+id/email_reg"
+        android:layout_alignStart="@+id/email_reg"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/email_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="177dp"
+        android:layout_above="@+id/phnum_reg"
+        android:layout_alignLeft="@+id/phnum_reg"
+        android:layout_alignStart="@+id/phnum_reg"
+        android:layout_marginBottom="17dp" />
+
+    <EditText
+        android:id="@+id/phnum_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="234dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/address_reg"
+        android:layout_alignStart="@+id/address_reg" />
+
+    <EditText
+        android:id="@+id/address_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="295dp"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/pass_reg"
+        android:layout_alignLeft="@+id/pass_reg"
+        android:layout_alignStart="@+id/pass_reg" />
+
+    <EditText
+        android:id="@+id/pass_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="350dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/con_pass_reg"
+        android:layout_alignLeft="@+id/con_pass_reg"
+        android:layout_alignStart="@+id/con_pass_reg" />
+
+    <EditText
+        android:id="@+id/con_pass_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="403dp"
+        android:layout_marginBottom="71dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:text="Register" />
+
+</RelativeLayout>
